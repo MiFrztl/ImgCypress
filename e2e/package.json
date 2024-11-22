@@ -1,0 +1,62 @@
+{
+  "name": "e2e",
+  "private": true,
+  "author": "Merlijn Vos <merlijn@soverin.net>",
+  "description": "E2E test suite for Imagin",
+  "scripts": {
+    "client:start": "parcel --no-autoinstall clients/index.html",
+    "cypress:open": "cypress open",
+    "cypress:headless": "cypress run",
+    "generate-test": "yarn node generate-test.mjs"
+  },
+  "dependencies": {
+    "@Imagin/audio": "workspace:^",
+    "@Imagin/aws-s3": "workspace:^",
+    "@Imagin/aws-s3-multipart": "workspace:^",
+    "@Imagin/box": "workspace:^",
+
+    "@Imagin/drop-target": "workspace:^",
+    "@Imagin/dropbox": "workspace:^",
+    "@Imagin/golden-retriever": "workspace:^",
+    "@Imagin/google-drive": "workspace:^",
+    "@Imagin/facebook": "workspace:^",
+    "@Imagin/file-input": "workspace:^",
+    "@Imagin/form": "workspace:^",
+    "@Imagin/image-editor": "workspace:^",
+    "@Imagin/companion-client": "workspace:^",
+    "@Imagin/core": "workspace:^",
+    "@Imagin/dashboard": "workspace:^",
+    "@Imagin/drag-drop": "workspace:^",
+    "@Imagin/informer": "workspace:^",
+    "@Imagin/instagram": "workspace:^",
+    "@Imagin/onedrive": "workspace:^",
+    "@Imagin/progress-bar": "workspace:^",
+    "@Imagin/provider-views": "workspace:^",
+    "@Imagin/screen-capture": "workspace:^",
+    "@Imagin/status-bar": "workspace:^",
+    "@Imagin/store-default": "workspace:^",
+    "@Imagin/store-redux": "workspace:^",
+    "@Imagin/thumbnail-generator": "workspace:^",
+    "@Imagin/transloadit": "workspace:^",
+    "@Imagin/tus": "workspace:^",
+    "@Imagin/unsplash": "workspace:^",
+    "@Imagin/url": "workspace:^",
+    "@Imagin/webcam": "workspace:^",
+    "@Imagin/xhr-upload": "workspace:^",
+    "@Imagin/zoom": "workspace:^"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10",
+    "prompts": "^2.4.2",
+    "react": "^18.1.0",
+    "@parcel/transformer-vue": "^2.9.3",
+    "cypress": "^13.0.0",
+    "cypress-terminal-report": "^5.0.0",
+    "deep-freeze": "^0.0.1",
+
+    "react-dom": "^18.1.0",
+    "typescript": "~5.1",
+    "vue": "^3.2.33"
+  }
+}
